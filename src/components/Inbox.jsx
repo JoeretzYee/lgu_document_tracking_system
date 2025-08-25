@@ -12,19 +12,19 @@ function Inbox() {
   return (
     <div className="overflow-x-auto">
       <Table hoverable>
-        <TableHead>
-          <TableRow className="text-white">
-            <TableHeadCell>Document Name</TableHeadCell>
-            <TableHeadCell>From</TableHeadCell>
-            <TableHeadCell>Sent By</TableHeadCell>
-            <TableHeadCell>Date</TableHeadCell>
-            <TableHeadCell>Status</TableHeadCell>
-            <TableHeadCell>Action</TableHeadCell>
-          </TableRow>
+        <TableHead >
+         <TableRow>
+    <TableHeadCell className="!bg-gray-700 !text-white">Document Name</TableHeadCell>
+    <TableHeadCell className="!bg-gray-700 !text-white">From</TableHeadCell>
+    <TableHeadCell className="!bg-gray-700 !text-white">Sent By</TableHeadCell>
+    <TableHeadCell className="!bg-gray-700 !text-white">Date</TableHeadCell>
+    <TableHeadCell className="!bg-gray-700 !text-white">Status</TableHeadCell>
+    <TableHeadCell className="!bg-gray-700 !text-white">Action</TableHeadCell>
+  </TableRow>
         </TableHead>
         <TableBody className="divide-y">
           <TableRow className="bg-white dark:border-gray-700 dark:bg-gray-800">
-            <TableCell className="whitespace-nowrap font-medium text-gray-900 text-white">
+            <TableCell className="whitespace-nowrap font-medium text-gray-900">
               Document Test
             </TableCell>
             <TableCell>Mayors Office</TableCell>
