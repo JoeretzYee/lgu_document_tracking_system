@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import ForwardDocumentModal from "../modals/ForwardDocumentModal";
 
-function Navbar({ user, handleLogOut }) {
+function Navbar({ user, userProfile, handleLogOut }) {
   const [openModal, setOpenModal] = useState(false);
 
   return (
@@ -39,7 +39,11 @@ function Navbar({ user, handleLogOut }) {
       </div>
 
       {/* Modal */}
-      <ForwardDocumentModal open={openModal} onClose={() => setOpenModal(false)} />
+      <ForwardDocumentModal
+        open={openModal}
+        userProfile={userProfile}
+        onClose={() => setOpenModal(false)}
+      />
     </header>
   );
 }
